@@ -36,7 +36,7 @@ impl LoyaltyPointsContract {
           let new_points = current_points - points;
           env.storage().persistent().set(&key, &new_points);
           true
-       }else{
+       } else{
           false
        }
 
